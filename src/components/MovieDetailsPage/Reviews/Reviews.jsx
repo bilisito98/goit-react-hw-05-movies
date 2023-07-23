@@ -17,9 +17,7 @@ export default function Reviews() {
         second: 'numeric'
     };
 
-    const test = (
-      <span className="iconify" data-icon="icomoon-free:arrow-down2"></span>
-    );
+    
 
     useEffect(() => {
         fetchMovieReviews(movieId)
