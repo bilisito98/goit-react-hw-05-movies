@@ -1,0 +1,96 @@
+.form{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .form{
+      width: 100%;
+      max-width: 500px;
+  }
+
+  .form:hover>.input,
+  .form:focus>.input {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .input:focus {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.input{
+  font-family: Roboto;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+      width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@media only screen and (max-width:767px) {
+  .input {
+      -webkit-appearance: none;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+          0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input{
+      width: 260px;
+  }
+
+  .form:hover>.input,
+  .form:focus>.input {
+      width: 300px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .input:focus {
+      width: 300px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  border-radius: 30px;
+  border: none;
+
+  background-color: #EF6401;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+      background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+      color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.icon{
+  fill: currentColor;
+}
