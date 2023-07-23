@@ -4,7 +4,6 @@ import { fetchMovies } from 'services/movies-api';
 import MoviesList from 'components/MoviesList';
 import MoviesListItem from '../../MoviesListItem';
 import normalizedData from 'services/normalized-data';
-import s from './MoviesSearchList.module.css';
 import { toast } from 'react-toastify';
 
 export default function MoviesSearchList({searchQuery}) {
