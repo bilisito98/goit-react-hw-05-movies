@@ -19,7 +19,7 @@ const Reviews = lazy(() => import('components/MovieDetailsPage/Reviews' /* webpa
 
 export default function App() {
     // Color for Loader component
-    let [color, setColor] = useState("#EF6401");
+    let [color] = useState("#EF6401");
 
     return (
         <Wrapper>
